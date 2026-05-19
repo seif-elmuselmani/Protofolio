@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">سيف الدين المسلماني | مهندس برمجيات خلفية .NET & MEAN</title>
+    <meta name="description" content="الموقع التعريفي الشخصي للمهندس سيف الدين المسلماني - مهندس برمجيات خلفية (.NET & MEAN) | Personal Portfolio of Seif Eldin ELMuselmani - Backend Software Engineer (.NET & MEAN)">
+
+    <!-- Google Fonts: Poppins (Headings), Inter (Body) and Cairo (Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for sleek modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Premium Loading Screen -->
+    <div id="loader" class="glass-loader">
+        <div class="loader-content">
+            <div class="loader-logo">SE<span class="pulse-dot">.</span></div>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Dotted Grid Background Overlay -->
+    <div class="grid-bg"></div>
+
+    <!-- Glowing Animated Background Orbs -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Header / Sticky Navbar -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">SE<span class="logo-dot">.</span></a>
+            
+            <!-- Desktop Links -->
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">
+                    <span class="lang-ar">الرئيسية</span>
+                    <span class="lang-en">Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="lang-ar">عني</span>
+                    <span class="lang-en">About</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <span class="lang-ar">المهارات</span>
+                    <span class="lang-en">Skills</span>
+                </a>
+                <a href="#certificates" class="nav-link">
+                    <span class="lang-ar">الشهادات</span>
+                    <span class="lang-en">Certificates</span>
+                </a>
+                <a href="#experience" class="nav-link">
+                    <span class="lang-ar">الخبرة</span>
+                    <span class="lang-en">Experience</span>
+                </a>
+                <a href="#education" class="nav-link">
+                    <span class="lang-ar">التعليم</span>
+                    <span class="lang-en">Education</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <span class="lang-ar">المشاريع</span>
+                    <span class="lang-en">Projects</span>
+                </a>
+                <a href="#testimonials" class="nav-link">
+                    <span class="lang-ar">الآراء</span>
+                    <span class="lang-en">Feedback</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="lang-ar">تواصل معي</span>
+                    <span class="lang-en">Contact</span>
+                </a>
+            </div>
+
+            <!-- Controls (Theme, Language, Hamburger) -->
+            <div class="nav-controls">
+                <!-- Language Toggle Button -->
+                <button id="langToggle" class="lang-btn" aria-label="Toggle Language">
+                    <span class="lang-ar"><i class="fa-solid fa-globe"></i> EN</span>
+                    <span class="lang-en"><i class="fa-solid fa-globe"></i> AR</span>
+                </button>
+                
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon dark-icon"></i>
+                    <i class="fas fa-sun light-icon"></i>
+                </button>
+                
+                <!-- Hamburger Menu for Mobile -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-link">
+            <span class="lang-ar">الرئيسية</span>
+            <span class="lang-en">Home</span>
+        </a>
+        <a href="#about" class="mobile-link">
+            <span class="lang-ar">عني</span>
+            <span class="lang-en">About</span>
+        </a>
+        <a href="#skills" class="mobile-link">
+            <span class="lang-ar">المهارات</span>
+            <span class="lang-en">Skills</span>
+        </a>
+        <a href="#certificates" class="mobile-link">
+            <span class="lang-ar">الشهادات</span>
+            <span class="lang-en">Certificates</span>
+        </a>
+        <a href="#experience" class="mobile-link">
+            <span class="lang-ar">الخبرة</span>
+            <span class="lang-en">Experience</span>
+        </a>
+        <a href="#education" class="mobile-link">
+            <span class="lang-ar">التعليم</span>
+            <span class="lang-en">Education</span>
+        </a>
+        <a href="#projects" class="mobile-link">
+            <span class="lang-ar">المشاريع</span>
+            <span class="lang-en">Projects</span>
+        </a>
+        <a href="#testimonials" class="mobile-link">
+            <span class="lang-ar">الآراء</span>
+            <span class="lang-en">Feedback</span>
+        </a>
+        <a href="#contact" class="mobile-link">
+            <span class="lang-ar">تواصل معي</span>
+            <span class="lang-en">Contact</span>
+        </a>
+    </div>
+
+    <!-- Scroll Progress Indicator Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Main Container -->
+    <main>
+        
+        <!-- 1. Hero / Home Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-text reveal fade-up">
+                    
+                    <!-- Pulsing Available Badge -->
+                    <div class="status-badge">
+                        <span class="pulse"></span>
+                        <span class="lang-ar">متاح للعمل المباشر أو التدريب</span>
+                        <span class="lang-en">Open to Internship / Junior Roles</span>
+                    </div>
+                    
+                    <p class="greeting">
+                        <span class="lang-ar">مرحباً بك، أنا</span>
+                        <span class="lang-en">Hi, I'm</span>
+                    </p>
+                    
+                    <h1 class="name">
+                        <span class="lang-ar">سيف الدين المسلماني</span>
+                        <span class="lang-en">Seif Eldin ELMuselmani</span>
+                    </h1>
+                    
+                    <h2 class="typing-container">
+                        <span id="typing-text"></span><span class="cursor">|</span>
+                    </h2>
+                    
+                    <h3 class="headline">
+                        <span class="lang-ar">مهندس برمجيات خلفية (.NET & MEAN) | فائز بالمركز الأول في مسابقة DEPI على مستوى الجمهورية</span>
+                        <span class="lang-en">Backend Software Engineer (.NET & MEAN) | BSc in CS | NTI & DEPI Scholar (1st Place Project)</span>
+                    </h3>
+                    
+                    <p class="intro">
+                        <span class="lang-ar">مطور برمجيات خلفية (Backend) حائز على جوائز، متخصص في الأنظمة القابلة للتوسع، البنية النظيفة (Clean Architecture)، وتطوير التطبيقات من الصفر. أبحث بنشاط عن تدريب أو وظيفة جونيور .NET (عن بعد/هجين) لتقديم مهارات تقنية متميزة وعقلية قيادية لفريقكم.</span>
+                        <span class="lang-en">Award-winning Backend Developer specializing in scalable architecture, Clean Architecture, and zero-to-one application development. Actively seeking a Backend Internship or Junior .NET role (Remote/Hybrid) to bring a blend of technical skill and leadership mindset to your team.</span>
+                    </p>
+                    
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary ripple-btn">
+                            <span class="lang-ar">مشاهدة الأعمال <i class="fa-solid fa-code"></i></span>
+                            <span class="lang-en">View Projects <i class="fa-solid fa-code"></i></span>
+                        </a>
+                        <a href="assets/Saif Al-Din Muhammad Ibrahim.pdf" class="btn btn-outline ripple-btn" download>
+                            <span class="lang-ar">تحميل CV <i class="fa-solid fa-download"></i></span>
+                            <span class="lang-en">Download CV <i class="fa-solid fa-download"></i></span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline ripple-btn">
+                            <span class="lang-ar">تواصل معي <i class="fa-solid fa-paper-plane"></i></span>
+                            <span class="lang-en">Contact Me <i class="fa-solid fa-paper-plane"></i></span>
+                        </a>
+                    </div>
+
+                    <!-- Social Icons Grid -->
+                    <div class="social-links">
+                        <a href="https://github.com/seif-elmuselmani" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/seif-elmuselmani" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:eldenseif645@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Profile Container (Glow Effect & Floating Icons) -->
+                <div class="hero-visuals reveal fade-left">
+                    <div class="hero-image-container">
+                        <img src="assets/profile.jpg" alt="Seif Eldin ELMuselmani" class="hero-image">
+                        <div class="image-glow"></div>
+                        <!-- Decorative Rotating Vector Rings -->
+                        <svg class="hero-ring-vector" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="46" stroke="url(#ring-grad)" stroke-width="1" fill="none" stroke-dasharray="16 12" />
+                            <defs>
+                                <linearGradient id="ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="var(--primary)"/>
+                                    <stop offset="100%" stop-color="var(--accent)"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <!-- Floating Technology Badges with CSS Micro-Animations representing .NET, C#, Database, and Node.js -->
+                    <div class="float-icon icon-net" title=".NET & C#"><i class="fa-brands fa-microsoft"></i></div>
+                    <div class="float-icon icon-node" title="Node.js"><i class="fa-brands fa-node-js"></i></div>
+                    <div class="float-icon icon-csharp" title="C# Code"><i class="fa-solid fa-terminal"></i></div>
+                    <div class="float-icon icon-database" title="Database"><i class="fa-solid fa-database"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Badge Section -->
+        <section class="badge-section">
+            <div class="container badge-grid">
+                
+                <!-- Badge 1 -->
+                <div class="badge-card glass-card reveal fade-up">
+                    <div class="badge-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <div class="badge-content">
+                        <h3 class="badge-number">1st</h3>
+                        <p class="badge-text">
+                            <span class="lang-ar">المركز الأول على الجمهورية</span>
+                            <span class="lang-en">DEPI National Winner</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Badge 2 -->
+                <div class="badge-card glass-card reveal fade-up" style="transition-delay: 50ms;">
+                    <div class="badge-icon"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="badge-content">
+                        <h3 class="badge-number">+7K</h3>
+                        <p class="badge-text">
+                            <span class="lang-ar">متابع على لينكد إن</span>
+                            <span class="lang-en">LinkedIn Followers</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Badge 3 -->
+                <div class="badge-card glass-card reveal fade-up" style="transition-delay: 100ms;">
+                    <div class="badge-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <div class="badge-content">
+                        <h3 class="badge-number">100%</h3>
+                        <p class="badge-text">
+                            <span class="lang-ar">بنية برمجية نظيفة</span>
+                            <span class="lang-en">Clean Architecture</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Badge 4 -->
+                <div class="badge-card glass-card reveal fade-up" style="transition-delay: 150ms;">
+                    <div class="badge-icon green"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="badge-content">
+                        <h3 class="badge-number glow-text">100%</h3>
+                        <p class="badge-text">
+                            <span class="lang-ar">جاهز للتوظيف الفوري</span>
+                            <span class="lang-en">Ready for Placement</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">
+                    <span class="lang-ar">عني</span>
+                    <span class="lang-en">About Me</span>
+                </h2>
+
+                <div class="about-grid">
+                    <div class="about-content glass-card reveal fade-right">
+                        <h3>
+                            <span class="lang-ar">شغفي بالبناء والتطوير</span>
+                            <span class="lang-en">My Passion for Architecting scalable systems</span>
+                        </h3>
+                        <p>
+                            <span class="lang-ar">أنا مهندس برمجيات شغوف وطالب في السنة النهائية بكلية الحاسبات والمعلومات بجامعة الزقازيق، متخصص في تطوير الأنظمة الخلفية (Backend) باستخدام .NET (C#) و SQL Server. تتميز مسيرتي بالقيادة والابتكار، بدءاً من الفوز بالمركز الأول على مستوى الجمهورية في مسابقة DEPI بمشروع "شريان"، وصولاً إلى قيادة تطوير نظام الرعاية الصحية المدعوم بالذكاء الاصطناعي "نبض".</span>
+                            <span class="lang-en">I am a passionate Software Engineer and a Final Year Computer Science student at Zagazig University, specializing in Backend Development with .NET (C#) and SQL Server. My journey is defined by leadership and innovation, from winning 1st Place nationwide in the DEPI competition with the 'Shuryan' project, to leading the 'NABD' AI-driven healthcare ecosystem.</span>
+                        </p>
+                        <p>
+                            <span class="lang-ar">إلى جانب البرمجة، أنا مساهم نشط في المجتمع التقني ولدي أكثر من 7,000 متابع على LinkedIn. أحب باستمرار تطبيق مبادئ SOLID والبرمجة كائنية التوجه OOP وبناء واجهات برمجية API قوية وسلسة تحل المشكلات الواقعية بكفاءة عالية.</span>
+                            <span class="lang-en">Beyond coding, I am an active tech community contributor with over 7,000 followers on LinkedIn. I thrive on implementing SOLID principles, OOP, and building robust, scalable RESTful APIs that address complex real-world requirements.</span>
+                        </p>
+                        
+                        <div class="about-strengths">
+                            <span class="strength-badge"><i class="fa-solid fa-sitemap"></i> <span class="lang-ar">البنية النظيفة</span><span class="lang-en">Clean Architecture</span></span>
+                            <span class="strength-badge"><i class="fa-solid fa-chart-line"></i> <span class="lang-ar">تحليل النظم</span><span class="lang-en">System Analysis</span></span>
+                            <span class="strength-badge"><i class="fa-solid fa-square-check"></i> <span class="lang-ar">مراجعة الكود</span><span class="lang-en">Code Review</span></span>
+                            <span class="strength-badge"><i class="fa-solid fa-user-gear"></i> <span class="lang-ar">القيادة والتميز</span><span class="lang-en">Leadership</span></span>
+                        </div>
+                    </div>
+
+                    <div class="about-details glass-card reveal fade-left">
+                        <h3>
+                            <span class="lang-ar">معلومات عامة</span>
+                            <span class="lang-en">General Info</span>
+                        </h3>
+                        <ul class="info-list">
+                            <li>
+                                <strong><span class="lang-ar">الاسم:</span><span class="lang-en">Name:</span></strong>
+                                <span><span class="lang-ar">سيف الدين المسلماني</span><span class="lang-en">Seif Eldin ELMuselmani</span></span>
+                            </li>
+                            <li>
+                                <strong><span class="lang-ar">التخصص:</span><span class="lang-en">Specialty:</span></strong>
+                                <span><span class="lang-ar">مطور خوادم .NET & MEAN</span><span class="lang-en">Backend Developer (.NET & MEAN)</span></span>
+                            </li>
+                            <li>
+                                <strong><span class="lang-ar">البريد الإلكتروني:</span><span class="lang-en">Email:</span></strong>
+                                <span>eldenseif645@gmail.com</span>
+                            </li>
+                            <li>
+                                <strong><span class="lang-ar">رقم الهاتف:</span><span class="lang-en">Phone:</span></strong>
+                                <span>+20 122 381 7860</span>
+                            </li>
+                            <li>
+                                <strong><span class="lang-ar">الموقع:</span><span class="lang-en">Location:</span></strong>
+                                <span><span class="lang-ar">الزقازيق، مصر</span><span class="lang-en">Zagazig, Egypt</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">
+                    <span class="lang-ar">المهارات والشهادات</span>
+                    <span class="lang-en">Skills & Certifications</span>
+                </h2>
+
+                <div class="skills-grid">
+                    
+                    <!-- Progress Bars Left Column -->
+                    <div class="skills-bars-col glass-card reveal fade-right">
+                        <h3>
+                            <span class="lang-ar">أبرز مجالات التخصص</span>
+                            <span class="lang-en">Top Expert Domains</span>
+                        </h3>
+                        
+                        <div class="skill-progress-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C# & ASP.NET Core Web API</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" data-progress="95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-progress-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MEAN Stack (MongoDB, Express, Angular, Node)</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" data-progress="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-progress-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL Server & EF Core (Code-First)</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" data-progress="92%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-progress-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Clean Architecture & SOLID Principles</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" data-progress="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills & Certifications Grid -->
+                    <div class="skills-cards-col">
+                        
+                        <!-- Core Tech Stack Card -->
+                        <div class="skills-category-card glass-card reveal fade-up">
+                            <h4><i class="fa-solid fa-cubes"></i> <span class="lang-ar">التقنيات الأساسية</span><span class="lang-en">Core Technical Stack</span></h4>
+                            <div class="skill-chips">
+                                <span class="chip">C# & ASP.NET Core</span>
+                                <span class="chip">Node.js & Express</span>
+                                <span class="chip">Angular & React</span>
+                                <span class="chip">SQL Server & MongoDB</span>
+                                <span class="chip">EF Core & SQL Server</span>
+                                <span class="chip">JavaScript (ES6+) & TS</span>
+                                <span class="chip">Clean Architecture & SOLID</span>
+                                <span class="chip">Git & GitHub Workflows</span>
+                            </div>
+                        </div>
+
+                        <!-- Certifications Card -->
+                        <div class="skills-category-card glass-card reveal fade-up" style="transition-delay: 100ms;">
+                            <h4><i class="fa-solid fa-certificate"></i> <span class="lang-ar">الشهادات والمسارات</span><span class="lang-en">Certifications & Tracks</span></h4>
+                            <div class="skill-chips">
+                                <span class="chip"><i class="fa-solid fa-brain"></i> Deep Learning Intro</span>
+                                <span class="chip"><i class="fa-brands fa-python"></i> Python Basics</span>
+                                <span class="chip"><i class="fa-solid fa-graduation-cap"></i> Business English Track</span>
+                                <span class="chip"><i class="fa-solid fa-star"></i> DEPI 1st Winner</span>
+                                <span class="chip"><i class="fa-solid fa-user-shield"></i> System Analysis</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates section">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">
+                    <span class="lang-ar">الشهادات والاعتمادات</span>
+                    <span class="lang-en">Certificates & Credentials</span>
+                </h2>
+
+                <div class="certificates-grid">
+                    
+                    <!-- Cert 1: DEPI -->
+                    <div class="cert-card glass-card reveal fade-up">
+                        <div class="cert-img-wrapper">
+                            <img src="assets/Seif elden mohamed ibrahim (1).jpg" alt="Digital Egypt Pioneers Program (DEPI) Certificate" class="cert-img">
+                            <div class="cert-img-overlay">
+                                <span class="cert-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">DEPI - Ministry of Communications Egypt</span>
+                            <h3>
+                                <span class="lang-ar">مطور ويب متكامل Full Stack .Net</span>
+                                <span class="lang-en">Full stack .Net Web Developer</span>
+                            </h3>
+                            <p class="cert-date">June - December 2025</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2: SQL Intermediate -->
+                    <div class="cert-card glass-card reveal fade-up" style="transition-delay: 50ms;">
+                        <div class="cert-img-wrapper">
+                            <img src="assets/Screenshot 2026-05-17 190150.png" alt="HackerRank SQL Intermediate Certificate" class="cert-img">
+                            <div class="cert-img-overlay">
+                                <span class="cert-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">HackerRank</span>
+                            <h3>
+                                <span class="lang-ar">شهادة استعلامات SQL (مستوى متوسط)</span>
+                                <span class="lang-en">SQL (Intermediate) Certificate</span>
+                            </h3>
+                            <p class="cert-date">18 Jul, 2025</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3: SQL Basic -->
+                    <div class="cert-card glass-card reveal fade-up" style="transition-delay: 100ms;">
+                        <div class="cert-img-wrapper">
+                            <img src="assets/Screenshot 2026-05-17 190117.png" alt="HackerRank SQL Basic Certificate" class="cert-img">
+                            <div class="cert-img-overlay">
+                                <span class="cert-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">HackerRank</span>
+                            <h3>
+                                <span class="lang-ar">شهادة استعلامات SQL (مستوى مبتدئ)</span>
+                                <span class="lang-en">SQL (Basic) Certificate</span>
+                            </h3>
+                            <p class="cert-date">21 Jul, 2025</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4: Deep Learning Intro -->
+                    <div class="cert-card glass-card reveal fade-up" style="transition-delay: 150ms;">
+                        <div class="cert-img-wrapper">
+                            <img src="assets/Screenshot 2026-05-17 1859f35.png" alt="Mahara-Tech Deep Learning Certificate" class="cert-img">
+                            <div class="cert-img-overlay">
+                                <span class="cert-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">ITI Mahara-Tech</span>
+                            <h3>
+                                <span class="lang-ar">مقدمة في التعلم العميق Deep Learning</span>
+                                <span class="lang-en">Introduction to Deep Learning</span>
+                            </h3>
+                            <p class="cert-date">25 Jan, 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 5: Python Basics -->
+                    <div class="cert-card glass-card reveal fade-up" style="transition-delay: 200ms;">
+                        <div class="cert-img-wrapper">
+                            <img src="assets/Screenshot 2026-05-17 190031.png" alt="Mahara-Tech Python Basics Certificate" class="cert-img">
+                            <div class="cert-img-overlay">
+                                <span class="cert-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">ITI Mahara-Tech</span>
+                            <h3>
+                                <span class="lang-ar">أساسيات البرمجة بلغة بايثون Python</span>
+                                <span class="lang-en">Python Programming Basics</span>
+                            </h3>
+                            <p class="cert-date">21 Jan, 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 6: Git & GitHub -->
+                    <div class="cert-card glass-card reveal fade-up" style="transition-delay: 250ms;">
+                        <div class="cert-img-wrapper">
+                            <img src="assets/Screenshot 2026-05-17 190218.png" alt="Almdrasa Git and GitHub Certificate" class="cert-img">
+                            <div class="cert-img-overlay">
+                                <span class="cert-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">Almdrasa Platform</span>
+                            <h3>
+                                <span class="lang-ar">إدارة النسخ وسير عمل Git & GitHub</span>
+                                <span class="lang-en">Git & GitHub Version Control</span>
+                            </h3>
+                            <p class="cert-date">2025</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">
+                    <span class="lang-ar">الخبرة المهنية</span>
+                    <span class="lang-en">Work Experience</span>
+                </h2>
+
+                <div class="timeline">
+                    
+                    <!-- Timeline Item 1: MEAN Stack Intern -->
+                    <div class="timeline-item reveal fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Mar 2026 - <span class="lang-ar">الآن</span><span class="lang-en">Present</span></span>
+                            <h3>MEAN Stack Developer Intern</h3>
+                            <h4 class="timeline-company">National Telecommunication Institute (NTI)</h4>
+                            <p class="timeline-summary">
+                                <span class="lang-ar">برنامج تدريبي وتطبيقي مكثف يركز على احتراف MEAN Stack وبناء تطبيقات ويب كاملة مع تعزيز كفاءة تطوير الخوادم المعقدة.</span>
+                                <span class="lang-en">Intensive training program focusing on the MEAN Stack. Building full-stack web applications and enhancing complex server-side development skills.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: Freelancer -->
+                    <div class="timeline-item reveal fade-up" style="transition-delay: 50ms;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2024 - <span class="lang-ar">الآن</span><span class="lang-en">Present</span></span>
+                            <h3>Freelance Software Developer</h3>
+                            <h4 class="timeline-company">Self-Employed</h4>
+                            <p class="timeline-summary">
+                                <span class="lang-ar">قيادة تطوير الأنظمة الخلفية من الصفر، وتصميم عقود واجهات البرمجة (API Contracts)، وتحليل الأنظمة، وإجراء مراجعة شاملة للأكواد.</span>
+                                <span class="lang-en">Leading zero-to-one backend development, API contracts design, and system analysis for multiple web-based solutions. Conducting rigorous code reviews.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: DEPI Trainee -->
+                    <div class="timeline-item reveal fade-up" style="transition-delay: 100ms;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Jun 2025 - Dec 2025</span>
+                            <h3>Full Stack .NET Trainee</h3>
+                            <h4 class="timeline-company">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                            <p class="timeline-summary">
+                                <span class="lang-ar">مسار تقني مكثف. احتراف بناء تطبيقات ويب قابلة للتوسع باستخدام ASP.NET Core و EF Core (منهج الكود أولاً). تطبيق أفضل الممارسات مثل أنماط التصميم والبنية النظيفة. تخرجت بامتياز وحصلت على المركز الأول على مستوى الجمهورية.</span>
+                                <span class="lang-en">Intensive technical track. Mastered scalable web apps using ASP.NET Core and EF Core (Code-First). Applied industry-standard practices including Design Patterns and Clean Architecture. Secured 1st Place nationwide.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Education Section -->
+        <section id="education" class="education section">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">
+                    <span class="lang-ar">التعليم والإنجازات</span>
+                    <span class="lang-en">Education & Achievements</span>
+                </h2>
+
+                <div class="education-grid">
+                    
+                    <!-- Degree Card -->
+                    <div class="edu-card glass-card reveal fade-right">
+                        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <span class="card-duration">Aug 2022 - May 2026 (<span class="lang-ar">متوقع</span><span class="lang-en">Expected</span>)</span>
+                        <h3>
+                            <span class="lang-ar">بكالوريوس علوم الحاسب</span>
+                            <span class="lang-en">Bachelor of Science in Computer Science</span>
+                        </h3>
+                        <h4>
+                            <span class="lang-ar">كلية الحاسبات والمعلومات - جامعة الزقازيق</span>
+                            <span class="lang-en">Faculty of Computers & Information, Zagazig University</span>
+                        </h4>
+                        <p class="card-desc">
+                            <strong><span class="lang-ar">التقدير التراكمي:</span><span class="lang-en">Cumulative Grade:</span></strong>
+                            <span class="highlight-val"> <span class="lang-ar">جيد جداً</span><span class="lang-en">Very Good</span></span>
+                        </p>
+                    </div>
+
+                    <!-- Achievements Card -->
+                    <div class="edu-card glass-card reveal fade-left">
+                        <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+                        <h3>
+                            <span class="lang-ar">أبرز الإنجازات والجوائز</span>
+                            <span class="lang-en">Key Achievements</span>
+                        </h3>
+                        <div class="courses-list">
+                            
+                            <div class="course-item">
+                                <div class="course-bullet"></div>
+                                <div class="course-text">
+                                    <h4>
+                                        <span class="lang-ar">المركز الأول على مستوى الجمهورية - مسابقة DEPI</span>
+                                        <span class="lang-en">1st Place Winner - DEPI Nationwide Competition</span>
+                                    </h4>
+                                    <p>
+                                        <span class="lang-ar">الفوز بالمركز الأول من بين آلاف المطورين على مستوى الجمهورية بفضل مشروع الرعاية الصحية المتكامل "شريان".</span>
+                                        <span class="lang-en">Secured 1st Place nationwide out of thousands of developers in Egypt with the integrated healthcare platform "Shuryan".</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <div class="course-bullet"></div>
+                                <div class="course-text">
+                                    <h4>
+                                        <span class="lang-ar">+7,000 متابع مهني على لينكد إن</span>
+                                        <span class="lang-en">7K+ Tech Network on LinkedIn</span>
+                                    </h4>
+                                    <p>
+                                        <span class="lang-ar">تأسيس حضور تقني متميز ونشط لمشاركة المعرفة بالـ Backend وممارسات كتابة الكود النظيف في المجتمع البرمجي.</span>
+                                        <span class="lang-en">Building an active technology brand on LinkedIn, contributing concepts of Backend engineering, architecture, and SOLID coding.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">
+                    <span class="lang-ar">المشاريع المميزة</span>
+                    <span class="lang-en">Featured Projects</span>
+                </h2>
+
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: Shryan -->
+                    <div class="project-card glass-card reveal fade-up">
+                        <div class="project-img-wrapper">
+                            <img src="assets/shryan.png" alt="Shryan Healthcare Platform" class="project-img">
+                            <div class="project-img-overlay"></div>
+                        </div>
+                        <div class="project-info-content">
+                            <div class="project-tags">
+                                <span class="tag">.NET 8</span>
+                                <span class="tag">Clean Architecture</span>
+                                <span class="tag">SQL Server</span>
+                            </div>
+                            <h3>
+                                <span class="lang-ar">شريان (منصة رعاية صحية متكاملة)</span>
+                                <span class="lang-en">Shryan (Healthcare Platform)</span>
+                            </h3>
+                            <p>
+                                <span class="lang-ar">المشروع الحائز على المركز الأول في مسابقة DEPI على مستوى الجمهورية. هندسة نظام بيئي كامل يربط الصيدليات والعيادات الطبية مع فصل منطق الأعمال بالكامل باستخدام البنية النظيفة.</span>
+                                <span class="lang-en">1st Place DEPI project. Architected a full-scale ecosystem connecting pharmacies and clinics, decoupling business logic using Clean Architecture.</span>
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/seif-elmuselmani" target="_blank" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> <span class="lang-ar">كود المشروع</span><span class="lang-en">GitHub</span></a>
+                                <a href="https://shuryan-healthcare.netlify.app/" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-ar">المعاينة الحية</span><span class="lang-en">Live Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Nabd -->
+                    <div class="project-card glass-card reveal fade-up" style="transition-delay: 100ms;">
+                        <div class="project-img-wrapper">
+                            <img src="assets/nabd.png" alt="Nabd AI Diagnosis" class="project-img">
+                            <div class="project-img-overlay"></div>
+                        </div>
+                        <div class="project-info-content">
+                            <div class="project-tags">
+                                <span class="tag">ASP.NET Core Web API</span>
+                                <span class="tag">ML.NET</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">React</span>
+                            </div>
+                            <h3>
+                                <span class="lang-ar">نبض (نظام التشخيص الطبي بالذكاء الاصطناعي)</span>
+                                <span class="lang-en">Nabd (AI-Driven Diagnosis System)</span>
+                            </h3>
+                            <p>
+                                <span class="lang-ar">مشروع التخرج (قائد الفريق). قيادة وتطوير الواجهة الخلفية بـ ASP.NET Core مدمجة مع نماذج تشخيص طبي ذكية مخصصة للربط الفعال بين البيانات الطبية وتوقعات الحالات بدقة.</span>
+                                <span class="lang-en">Senior graduation project (Project Lead). Orchestrating the development of a .NET backend integrated with custom AI diagnostic models, bridging medical data and intelligent diagnostics.</span>
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/seif-elmuselmani" target="_blank" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> <span class="lang-ar">كود المشروع</span><span class="lang-en">GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Kshaf -->
+                    <div class="project-card glass-card reveal fade-up" style="transition-delay: 200ms;">
+                        <div class="project-img-wrapper">
+                            <img src="assets/kshaf.png" alt="Kshaf Scouting Platform" class="project-img">
+                            <div class="project-img-overlay"></div>
+                        </div>
+                        <div class="project-info-content">
+                            <div class="project-tags">
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Express.js</span>
+                                <span class="tag">Angular</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                            <h3>
+                                <span class="lang-ar">كشاف (منصة الكشف عن المواهب الرياضية)</span>
+                                <span class="lang-en">Kshaf (Sports Talent Scouting Platform)</span>
+                            </h3>
+                            <p>
+                                <span class="lang-ar">تم تطويره في المعهد القومي للاتصالات (NTI) باستخدام MEAN Stack. تطبيق خوارزميات بحث وتصفية متقدمة ومعقدة، واستغلال TypeScript لتحقيق أعلى كفاءة وأداء في فرز المواهب وتصنيفها.</span>
+                                <span class="lang-en">Developed at NTI using the MEAN stack. Implemented complex search/filtering algorithms and leveraged TypeScript for high performance.</span>
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/seif-elmuselmani" target="_blank" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> <span class="lang-ar">كود المشروع</span><span class="lang-en">GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Services Section -->
+        <section id="services" class="services section">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">
+                    <span class="lang-ar">الخدمات التقنية</span>
+                    <span class="lang-en">My Services</span>
+                </h2>
+
+                <div class="services-grid">
+                    
+                    <!-- Service 1 -->
+                    <div class="service-card glass-card reveal fade-up">
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>
+                            <span class="lang-ar">تطوير الأنظمة الخلفية (.NET & MEAN)</span>
+                            <span class="lang-en">Backend Development</span>
+                        </h3>
+                        <p>
+                            <span class="lang-ar">تصميم وتطوير خوادم وأنظمة ويب خلفية عالية الأداء وقابلة للتوسع، وإدارة قواعد البيانات وواجهات البرمجة (APIs) المعقدة.</span>
+                            <span class="lang-en">Designing and developing high-performance, secure, and scalable server-side systems, RESTful APIs, and robust databases.</span>
+                        </p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass-card reveal fade-up" style="transition-delay: 50ms;">
+                        <div class="service-icon"><i class="fa-solid fa-sitemap"></i></div>
+                        <h3>
+                            <span class="lang-ar">البنية البرمجية النظيفة ومبادئ SOLID</span>
+                            <span class="lang-en">Clean Architecture & SOLID</span>
+                        </h3>
+                        <p>
+                            <span class="lang-ar">تطبيق أفضل ممارسات هندسة البرمجيات وفصل منطق الأعمال لضمان كود منظم، سهل القراءة والصيانة وسرعة التطوير.</span>
+                            <span class="lang-en">Applying SOLID principles and Clean Architecture design patterns to decouple business logic, ensuring highly maintainable codebases.</span>
+                        </p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass-card reveal fade-up" style="transition-delay: 100ms;">
+                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>
+                            <span class="lang-ar">تصميم وتحسين قواعد البيانات</span>
+                            <span class="lang-en">Database Optimization</span>
+                        </h3>
+                        <p>
+                            <span class="lang-ar">بناء وتصميم جداول وقواعد بيانات SQL & NoSQL محسنة، مع ضبط الاستعلامات المعقدة لضمان أقصى سرعة واستجابة.</span>
+                            <span class="lang-en">Designing high-performance relational and non-relational database schemas, writing complex queries, and tuning indexing for speed.</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Testimonials / Feedback Section -->
+        <section id="testimonials" class="testimonials section">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">
+                    <span class="lang-ar">آراء وتوصيات مهنية</span>
+                    <span class="lang-en">Professional Testimonials</span>
+                </h2>
+
+                <div class="testimonials-grid">
+                    
+                    <!-- Recommendation 1: Sherif Adel -->
+                    <div class="testimonial-card glass-card reveal fade-up">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="quote">
+                            <span class="lang-ar">"بصفتي المسؤول الإداري في الفرع، يسعدني جداً أن أوصي بشدة بسيف المسلماني، الذي كان أحد الطلاب المتميزين والبارزين خلال فترة تواجده في برنامج المعهد القومي للاتصالات (NTI). أظهر سيف التزاماً قوياً بالتعلم والتطوير الذاتي المستمر. كان يحضر الجلسات باستمرار، ويشارك بنشاط في المناقشات والأنشطة العملية، وأظهر قدرة رائعة على استيعاب المفاهيم بسرعة وتطبيقها بفعالية وبأسلوب منظم. بالإضافة إلى ذلك، فهو يتمتع بنظرة إيجابية، ومهارات عمل جماعي قوية، وحس عالٍ بالمسؤولية، مما يجعله أصلاً قيماً لأي مؤسسة ينضم إليها."</span>
+                            <span class="lang-en">"In my capacity as the administrative officer at the branch, I am pleased to highly recommend Seif ElMuselmani, who was one of the outstanding students during his time in the NTI program. Seif demonstrated a strong commitment to learning and continuous self-development. He consistently attended sessions, actively participated in discussions and practical activities, and showed an impressive ability to quickly grasp concepts and apply them effectively in a structured manner. In addition, he possesses a positive attitude, strong teamwork skills, and a high sense of responsibility, making him a valuable asset to any organization he joins."</span>
+                        </p>
+                        <div class="user-info">
+                            <div class="avatar-fallback"><i class="fa-solid fa-user-tie"></i></div>
+                            <div class="user-details">
+                                <h4>
+                                    <span class="lang-ar">شريف عادل</span>
+                                    <span class="lang-en">Sherif Adel</span>
+                                </h4>
+                                <span class="title">
+                                    <span class="lang-ar">المسؤول الإداري في الفرع - NTI (موجه سيف)</span>
+                                    <span class="lang-en">Administrative Officer at Branch, NTI (Seif's Mentor)</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendation 2: Rayan Mohamed -->
+                    <div class="testimonial-card glass-card reveal fade-up" style="transition-delay: 50ms;">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="quote">
+                            <span class="lang-ar">"لقد سعدت بالعمل مع سيف خلال فترة تدريبه في مسار MEAN Stack. سيف هو أحد أكثر المتدربين تفانياً واجتهاداً الذين قابلتهم، وشغفه بالتعلم والتطوير المستمر واضح وجلي للغاية. إن ما يميز سيف حقاً هو فضوله التقني ورغبته العميقة في فهم كل التفاصيل. كان يطرح باستمرار أسئلة مدروسة ويهتم بشدة بالتفاصيل الصغيرة في الشروحات لضمان استيعابه الكامل للمفاهيم. أعتقد أن سيف ينتظره مستقبل واعد للغاية في مجال تطوير البرمجيات، وأوصي به بشدة لأي فرصة في مجال تطوير الويب."</span>
+                            <span class="lang-en">"I had the pleasure of working with Seif during his training in the MEAN Stack track. Seif is one of the most dedicated and hardworking trainees I have met, and his passion for learning and continuous improvement is very clear. What truly distinguishes Seif is his technical curiosity and his desire to understand every detail. He consistently asked thoughtful questions and paid close attention to the small details in the explanations to ensure he fully understood the concepts. I believe Seif has a very promising future in software development, and I highly recommend him for any opportunity in Web Development."</span>
+                        </p>
+                        <div class="user-info">
+                            <div class="avatar-fallback"><i class="fa-solid fa-user-gear"></i></div>
+                            <div class="user-details">
+                                <h4>
+                                    <span class="lang-ar">ريان محمد</span>
+                                    <span class="lang-en">Rayan Mohamed</span>
+                                </h4>
+                                <span class="title">
+                                    <span class="lang-ar">مطور واجهات أمامية (موجه سيف في MEAN Stack)</span>
+                                    <span class="lang-en">Front-end Developer (Seif's MEAN Stack Mentor)</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Contact / Get In Touch Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">
+                    <span class="lang-ar">تواصل معي</span>
+                    <span class="lang-en">Contact Me</span>
+                </h2>
+
+                <div class="contact-grid">
+                    
+                    <!-- Direct Contact Details -->
+                    <div class="contact-info reveal fade-right">
+                        
+                        <!-- Email Card -->
+                        <div class="info-item-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-text">
+                                <h4><span class="lang-ar">البريد الإلكتروني</span><span class="lang-en">Email Me</span></h4>
+                                <a href="mailto:eldenseif645@gmail.com">eldenseif645@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="info-item-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="info-text">
+                                <h4><span class="lang-ar">رقم الهاتف / واتساب</span><span class="lang-en">Call / WhatsApp</span></h4>
+                                <a href="tel:+201223817860" dir="ltr">+20 122 381 7860</a>
+                            </div>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="info-item-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <h4><span class="lang-ar">الموقع الجغرافي</span><span class="lang-en">Location</span></h4>
+                                <p><span class="lang-ar">الزقازيق، مصر</span><span class="lang-en">Zagazig, Egypt</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Info -->
+                        <div class="info-item-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                            <div class="info-text">
+                                <h4><span class="lang-ar">تابعني على السوشيال ميديا</span><span class="lang-en">Follow My Socials</span></h4>
+                                <div class="social-flex">
+                                    <a href="https://github.com/seif-elmuselmani" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://linkedin.com/in/seif-elmuselmani" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <form id="contactForm" class="contact-form glass-card reveal fade-left">
+                        <div class="form-group">
+                            <input type="text" id="form-name" required placeholder=" ">
+                            <label for="form-name">
+                                <span class="lang-ar">الاسم الكريم</span>
+                                <span class="lang-en">Your Full Name</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="form-email" required placeholder=" ">
+                            <label for="form-email">
+                                <span class="lang-ar">البريد الإلكتروني</span>
+                                <span class="lang-en">Email Address</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="form-subject" required placeholder=" ">
+                            <label for="form-subject">
+                                <span class="lang-ar">عنوان الرسالة</span>
+                                <span class="lang-en">Message Subject</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="form-message" rows="5" required placeholder=" "></textarea>
+                            <label for="form-message">
+                                <span class="lang-ar">مضمون الرسالة</span>
+                                <span class="lang-en">Your Message Detail</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary ripple-btn w-100">
+                            <span class="lang-ar">إرسال الرسالة الآن <i class="fa-solid fa-paper-plane"></i></span>
+                            <span class="lang-en">Send Message Now <i class="fa-solid fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 ENG. Seif Eldin ELMuselmani. <span class="lang-ar">جميع الحقوق محفوظة.</span><span class="lang-en">All rights reserved.</span></p>
+                <p>
+                    <span class="lang-ar">بُني بشغف وبرمجة نظيفة 💻</span>
+                    <span class="lang-en">Built with passion & Clean Architecture 💻</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Notification Dialog Overlay -->
+    <div id="toastNotification" class="toast-card glass-card">
+        <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="toast-text">
+            <h4 class="lang-ar">تم الإرسال بنجاح!</h4>
+            <h4 class="lang-en">Sent Successfully!</h4>
+            <p class="lang-ar">شكراً لتواصلك، سأقوم بالرد عليك في أقرب وقت.</p>
+            <p class="lang-en">Thank you, I will contact you back shortly.</p>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal Overlay for Certificates -->
+    <div id="lightbox" class="lightbox-modal">
+        <button id="lightboxClose" class="lightbox-close" aria-label="إغلاق - Close">&times;</button>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-content" id="lightboxImg" src="" alt="Certificate Closeup">
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
