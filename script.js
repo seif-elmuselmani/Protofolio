@@ -401,4 +401,76 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // ==========================================================================
+    // 11. Custom Cursor Engine
+    // ==========================================================================
+    const cursor     = document.getElementById('custom-cursor');
+    const follower   = document.getElementById('cursor-follower');
+
+    if (cursor && follower && window.matchMedia('(pointer: fine)').matches) {
+        let mouseX = 0, mouseY = 0;
+        let followerX = 0, followerY = 0;
+
+        // Track mouse position for the dot (instant)
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursor.style.left = mouseX + 'px';
+            cursor.style.top  = mouseY + 'px';
+        });
+
+        // Smooth follower ring using RAF
+        function animateFollower() {
+            followerX += (mouseX - followerX) * 0.12;
+            followerY += (mouseY - followerY) * 0.12;
+            follower.style.left = followerX + 'px';
+            follower.style.top  = followerY + 'px';
+            requestAnimationFrame(animateFollower);
+        }
+        animateFollower();
+
+        // Hover state on interactive elements
+        const hoverTargets = document.querySelectorAll(
+            'a, button, [role="button"], label, input, select, textarea, .cert-img-wrapper, .project-card, .badge-card'
+        );
+        hoverTargets.forEach(el => {
+            el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+            el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+        });
+
+        // Click flash
+        document.addEventListener('mousedown', () => document.body.classList.add('cursor-click'));
+        document.addEventListener('mouseup',   () => document.body.classList.remove('cursor-click'));
+
+        // Hide when leaving window
+        document.addEventListener('mouseleave', () => {
+            cursor.style.opacity   = '0';
+            follower.style.opacity = '0';
+        });
+        document.addEventListener('mouseenter', () => {
+            cursor.style.opacity   = '1';
+            follower.style.opacity = '1';
+        });
+    }
+
+    // ==========================================================================
+    // 12. Scroll-to-Top Button
+    // ==========================================================================
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        }, { passive: true });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
 });

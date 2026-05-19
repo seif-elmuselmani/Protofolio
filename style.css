@@ -2468,3 +2468,145 @@ html[lang="ar"] .lightbox-caption {
         content: none !important;
     }
 }
+
+/* ==========================================================================
+   FEATURE: Custom Cursor
+   ========================================================================== */
+@media (pointer: fine) {
+    body { cursor: none !important; }
+    a, button, [role="button"], label, input, select, textarea, .cert-img-wrapper {
+        cursor: none !important;
+    }
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease, background 0.2s ease, opacity 0.3s ease;
+    mix-blend-mode: normal;
+    will-change: transform;
+}
+
+.cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border: 2px solid rgba(var(--primary-rgb), 0.45);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99998;
+    transform: translate(-50%, -50%);
+    transition: transform 0.12s ease, width 0.25s ease, height 0.25s ease,
+                border-color 0.25s ease, opacity 0.3s ease;
+    will-change: transform;
+}
+
+/* Cursor hover state — expand ring and fill dot */
+.cursor-hover .custom-cursor {
+    width: 16px;
+    height: 16px;
+    background: var(--accent);
+}
+.cursor-hover .cursor-follower {
+    width: 56px;
+    height: 56px;
+    border-color: rgba(var(--accent-rgb), 0.35);
+}
+
+/* Cursor click state */
+.cursor-click .custom-cursor {
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+}
+.cursor-click .cursor-follower {
+    width: 28px;
+    height: 28px;
+}
+
+/* Hide custom cursor on touch/mobile devices */
+@media (pointer: coarse) {
+    .custom-cursor, .cursor-follower { display: none !important; }
+}
+
+/* Hide during print */
+@media print {
+    .custom-cursor, .cursor-follower { display: none !important; }
+}
+
+/* ==========================================================================
+   FEATURE: Scroll-to-Top Button
+   ========================================================================== */
+.back-to-top {
+    position: fixed;
+    bottom: 32px;
+    inset-inline-end: 28px;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 990;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(var(--primary-rgb), 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(16px);
+    transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.3s ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.55);
+    transform: translateY(-4px);
+}
+
+.back-to-top:active {
+    transform: translateY(-1px);
+}
+
+/* Pulse ring on the button */
+.back-to-top::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    background: inherit;
+    opacity: 0.35;
+    animation: btnPulse 2.5s infinite;
+}
+
+@keyframes btnPulse {
+    0%   { transform: scale(1);    opacity: 0.35; }
+    60%  { transform: scale(1.45); opacity: 0;    }
+    100% { transform: scale(1.45); opacity: 0;    }
+}
+
+/* Hide during print */
+@media print {
+    .back-to-top { display: none !important; }
+}

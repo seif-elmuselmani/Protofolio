@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="pageTitle">سيف الدين المسلماني | مهندس برمجيات خلفية .NET & MEAN</title>
-    <meta name="description" content="الموقع التعريفي الشخصي للمهندس سيف الدين المسلماني - مهندس برمجيات خلفية (.NET & MEAN) | Personal Portfolio of Seif Eldin ELMuselmani - Backend Software Engineer (.NET & MEAN)">
+    <title id="pageTitle">Seif Eldin ELMuselmani | Backend Software Engineer</title>
+    <meta name="description" content="Personal Portfolio of Seif Eldin ELMuselmani — Backend Software Engineer (.NET & MEAN Stack) | 1st Place DEPI Winner | Zagazig University">
+    <meta name="keywords" content="Seif Eldin, Backend Developer, .NET, C#, MEAN Stack, ASP.NET Core, Portfolio, Egypt, DEPI">
+    <meta name="author" content="Seif Eldin ELMuselmani">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph — LinkedIn / Facebook / WhatsApp preview card -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seif-elmuselmani.github.io/Protofolio/">
+    <meta property="og:title" content="Seif Eldin ELMuselmani | Backend Software Engineer">
+    <meta property="og:description" content="Award-winning Backend Developer (.NET & MEAN) | 🏆 DEPI 1st Place Winner | 7K+ LinkedIn | Open to Internship & Junior Roles">
+    <meta property="og:image" content="https://seif-elmuselmani.github.io/Protofolio/assets/profile.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ar_EG">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Seif Eldin ELMuselmani | Backend Software Engineer">
+    <meta name="twitter:description" content="Award-winning Backend Developer (.NET & MEAN) | 🏆 DEPI 1st Place Winner">
+    <meta name="twitter:image" content="https://seif-elmuselmani.github.io/Protofolio/assets/profile.jpg">
+
+    <!-- PWA -->
+    <meta name="theme-color" content="#3B82F6">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="SE Portfolio">
+    <link rel="manifest" href="manifest.json">
 
     <!-- Google Fonts: Poppins (Headings), Inter (Body) and Cairo (Arabic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1053,7 +1081,27 @@
         </div>
     </div>
 
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="cursor-follower" class="cursor-follower"></div>
+
+    <!-- Scroll to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('SW registered:', reg.scope))
+                    .catch(err => console.log('SW error:', err));
+            });
+        }
+    </script>
 </body>
 </html>
