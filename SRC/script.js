@@ -4,7 +4,7 @@
    Target: Seif Eldin ELMuselmani (Backend Software Engineer)
    ========================================================================== */
 
-document.addEventListener('DOMContentLoaded', () => {
+export function initScript() {
     
     // ==========================================================================
     // Global State Variables (Declared at the top to avoid ReferenceErrors/TDZ)
@@ -473,4 +473,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-});
+}

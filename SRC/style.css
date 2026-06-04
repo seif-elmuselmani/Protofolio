@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    Premium Personal Portfolio Stylesheet
    Author: Antigravity AI
    Target: Abdelrahman Mohamed (Frontend & Flutter Developer)
@@ -1097,7 +1097,6 @@ html[lang="ar"] .name {
     border-color: var(--primary);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.15);
-}
 }
 
 /* ==========================================================================
